@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { PriceCard } from './react-app';
+import { CreatePriceCard } from './react-app';
 
 function App() {
 
@@ -120,7 +120,7 @@ function App() {
   return (
     <div className="App">
      {cardData.map((eachCardCata)=>(
-      <PriceCard plan={eachCardCata.plan} price={eachCardCata.price} featureList ={eachCardCata.featureList} />
+      <CreatePriceCard plan={eachCardCata.plan} price={eachCardCata.price} featureList ={eachCardCata.featureList} />
      ))}
     </div>
   );
